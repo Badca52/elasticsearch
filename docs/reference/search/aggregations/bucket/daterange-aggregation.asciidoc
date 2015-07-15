@@ -10,15 +10,13 @@ Example:
 --------------------------------------------------
 {
     "aggs": {
-        "range": {
-            "date_range": {
-                "field": "date",
-                "format": "MM-yyy",
-                "ranges": [
-                    { "to": "now-10M/M" }, <1>
-                    { "from": "now-10M/M" } <2>
-                ]
-            }
+        "date_range": {
+            "field": "date",
+            "format": "MM-yyy",
+            "ranges": [
+                { "to": "now-10M/M" }, <1>
+                { "from": "now-10M/M" } <2>
+            ]
         }
     }
 }
